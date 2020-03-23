@@ -1,6 +1,6 @@
 const Telegraf = require('telegraf');
 
-const bot = new Telegraf('1077577493:AAGzaieNQ65XmPXQ5QefDTAGqTUlJheySpI');
+const bot = new Telegraf('YOUR API KEY');
 
 const helpMessage = `
 Bana bisey söyle

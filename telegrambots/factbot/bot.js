@@ -1,6 +1,6 @@
 const Telegraf = require("telegraf");
 
-const bot = new Telegraf("1103198561:AAEgENo3HeYHu01LarH-WNHmsI9lzGitZfY");
+const bot = new Telegraf("YOUR API KEY");
 
 const axios = require('axios');
 
@@ -39,7 +39,7 @@ bot.command('update', async ctx =>{
 
 async function getData(){
     try {
-        let res = await axios('https://spreadsheets.google.com/feeds/cells/1pxTxYhjm3xH6xW2boUwTEvg-Uu32O6gY-uGjYdp1J04/1/public/full?alt=json');
+        let res = await axios('https://spreadsheets.google.com/feeds/cells/YOURGOOGLEAPIKEY/1/public/full?alt=json');
         
         let data = res.data.feed.entry;
         dataStore = [];

@@ -1,5 +1,5 @@
 const Telegraf = require('telegraf');
-const bot = new Telegraf('1112697832:AAFx-rqRK9zQychRLXYKBYKrLiBbIJBZIaM');
+const bot = new Telegraf('YOUR API KEY');
 
 bot.command(['start', 'help'], ctx => {
     let message = `
@@ -71,29 +71,5 @@ bot.command(['start', 'help'], ctx => {
     
     bot.telegram.sendLocation(ctx.chat.id, 1.3521, 103.8198);
   })
-  
-  
-  // bot.on('message', async ctx => {
-  //   //when user sends a message, and subtype of message is document
-  //   if (ctx.updateSubTypes[0] == 'document') {
-  //     try {
-  //       let link = await bot.telegram.getFileLink(ctx.message.document.file_id);
-  //       ctx.reply('Your download link: ' + link);
-  //     } catch (err) {
-  //       console.log(err);
-  //       ctx.reply(err.description);
-  //     }
-  //     //when user sends a message, and subtype of message is photo
-  //   } else if (ctx.updateSubTypes[0] == 'photo') {
-  //     console.log();
-  //     try {
-  //       let link = await bot.telegram.getFileLink(ctx.message.photo[0].file_id);
-  //       ctx.reply('Your download link: ' + link);
-  //     } catch (err) {
-  //       console.log(err);
-  //       ctx.reply(err.description);
-  //     }
-  //   }
-  // })
-  
-  bot.launch();
+
+    bot.launch();

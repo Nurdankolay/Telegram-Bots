@@ -1,6 +1,6 @@
 const Telegraf = require('telegraf');
 
-const bot = new Telegraf('1046091070:AAHuUaLJbe9kmZ8r2XTv-GPnhSqKbtMb_-o');
+const bot = new Telegraf('YOUR API KEY');
 
 const axios = require('axios');
 const fs = require('fs');

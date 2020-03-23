@@ -1,6 +1,6 @@
 const Telegraf = require('telegraf');
 
-const bot = new Telegraf('1080507946:AAHRZRNXUnK829N6Vu6eLY4LORCmcdEDRKE');
+const bot = new Telegraf('YOUR API KEY');
 
 // start
 bot.start((ctx)=> {
